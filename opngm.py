@@ -1,16 +1,17 @@
 import webbrowser
-sifre=202093884
-hak=5
-deneme=int(input("Şifre giriniz: "))
-if sifre==deneme:
-    print("Giriş Başarılı ","Açılıyor...")
-    webbrowser.open("itemsatis.com")
+passw=202093884
+title=5
+tryy=int(input("enter password: "))
+if passw==tryy:
+    print("Login successful ","Opening...")
+    webbrowser.open("spotify.com")
 else:
-    hak=hak-1
-    print(hak,"Hakkınız Kaldı")
-    if hak==0:
-        print("Şifreniz Bloke Olmuştur")
-    wait=input("Çıkmak için Enter'a basınız...")
+    title=title-1
+    print("You have",title,"attempts left")
+    if title==0:
+        print("Your password has been blocked.")
+    wait=input("Press Enter to exit...")
+
 
 
 
